@@ -2,8 +2,7 @@
 
 a vscode extension to remind you the progress of year,month,day,cherish your time.
 
-![screenshot](https://github.com/Aaron00101010/vscode-YMD-progress/blob/master/screenshot.png)
-
+![screenshot](https://github.com/Aaron00101010/vscode-YMD-progress/blob/master/screenshot.png?raw=true)
 
 ## Install
 
@@ -15,8 +14,3 @@ search **YMD Progress** in vscode extension market
 - `YMDProgress.fractionDigits`: the fraction digits of progress
 
 
-
-## Release Note
-### 0.1.0
-
-initial publish

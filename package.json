@@ -1,55 +1,60 @@
 {
-	"name": "ymd-progress",
-	"displayName": "YMD-progress",
-	"description": "",
-	"publisher":"aaron00101010",
-	"version": "0.1.0",
-	"engines": {
-		"vscode": "^1.33.0"
-	},
-	"categories": [
-		"Other"
+  "name": "ymd-progress",
+  "displayName": "YMD-progress",
+  "description": "",
+  "publisher": "aaron00101010",
+  "icon": "icon.png",
+  "version": "0.1.2",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
 	],
-	"activationEvents": [
-		"*"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.YMDProgress",
-				"title": "YMD Progress"
-			}
-		],
-		"configuration": {
-			"type": "object",
-			"title": "YMD Progress configuration",
-			"properties": {
-				"YMDProgress.showRest": {
-					"type": "boolean",
-					"default": false,
-					"description": "whether show rest time,default show past time"
-				},
-				"YMDProgress.fractionDigits": {
-					"type": "number",
-					"default": 0,
-					"description": "the fraction digits of progress"
-				}
-			}
-		}
+	"repository": {
+		"type": "git",
+    "url": "https://github.com/Aaron00101010/vscode-YMD-progress"
 	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
-	}
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.YMDProgress",
+        "title": "YMD Progress"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "YMD Progress configuration",
+      "properties": {
+        "YMDProgress.showRest": {
+          "type": "boolean",
+          "default": false,
+          "description": "whether show rest time,default show past time"
+        },
+        "YMDProgress.fractionDigits": {
+          "type": "number",
+          "default": 0,
+          "description": "the fraction digits of progress"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28",
+    "tslint": "^5.12.1",
+    "@types/node": "^10.12.21",
+    "@types/mocha": "^2.2.42"
+  }
 }
