@@ -2,7 +2,7 @@
 	"name": "ymd-progress",
 	"displayName": "YMD-progress",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
@@ -24,18 +24,18 @@
 			"type": "object",
 			"title": "YMD Progress configuration",
 			"properties": {
-					"YMDProgress.showRest": {
-							"type": "boolean",
-							"default": false,
-							"description": "whether show rest time,default show past time"
-					},
-					"YMDProgress.fractionDigits": {
-							"type": "number",
-							"default": 0,
-							"description": "the fraction digits of progress"
-					}
+				"YMDProgress.showRest": {
+					"type": "boolean",
+					"default": false,
+					"description": "whether show rest time,default show past time"
+				},
+				"YMDProgress.fractionDigits": {
+					"type": "number",
+					"default": 0,
+					"description": "the fraction digits of progress"
+				}
 			}
-	}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
