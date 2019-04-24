@@ -9,3 +9,7 @@
 ### 0.1.2
 
 - fix readme image url
+
+### 0.1.3
+
+- update extension name
