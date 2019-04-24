@@ -1,8 +1,9 @@
-# ymd-progress
+# vscode YMD Progress
 
 a vscode extendtion to remind you the progress of year,month,day,cherish your time.
 
 ![screenshot](./screenshot.png)
+
 
 ## Install
 
